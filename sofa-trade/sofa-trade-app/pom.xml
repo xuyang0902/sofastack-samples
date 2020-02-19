@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sofa-trade</artifactId>
+        <groupId>com.ant.sofastack</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>sofa-trade-app</artifactId>
+    <name>sofa-trade-app</name>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.ant.sofastack</groupId>
+            <artifactId>sofa-trade-facade</artifactId>
+        </dependency>
+
+
+        <!--sofa 依赖-->
+
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>rpc-sofa-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>runtime-sofa-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>registry-client-all</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>

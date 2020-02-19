@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sofastack-samples</artifactId>
+        <groupId>com.ant.sofastack</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>sofa-portal</artifactId>
+    <name>sofa-portal</name>
+
+    <dependencies>
+
+
+
+
+        <!--sofa-trade-->
+        <dependency>
+            <groupId>com.ant.sofastack</groupId>
+            <artifactId>sofa-trade-facade</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+
+        <!--sofa-->
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>rpc-sofa-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>runtime-sofa-boot-starter</artifactId>
+        </dependency>
+
+        <!--注册中心-->
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>registry-client-all</artifactId>
+        </dependency>
+
+        <!--spring-boot-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+    </dependencies>
+
+
+</project>

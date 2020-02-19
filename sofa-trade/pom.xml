@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sofastack-samples</artifactId>
+        <groupId>com.ant.sofastack</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>sofa-trade</artifactId>
+    <packaging>pom</packaging>
+    <name>sofa-trade</name>
+    <version>1.0</version>
+
+    <modules>
+        <module>sofa-trade-facade</module>
+        <module>sofa-trade-app</module>
+        <module>sofa-trade-bootstrap</module>
+    </modules>
+
+    <dependencyManagement>
+        <!-- 在这里管理版本 如果整个项目要升级版本号，那么只需要改${project.version}  以及子项目的parent的版本就好了-->
+        <dependencies>
+            <dependency>
+                <groupId>com.ant.sofastack</groupId>
+                <artifactId>sofa-trade-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ant.sofastack</groupId>
+                <artifactId>sofa-trade-facade</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ant.sofastack</groupId>
+                <artifactId>sofa-trade-bootstrap</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
