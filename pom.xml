@@ -10,6 +10,7 @@
   <modules>
     <module>sofa-trade</module>
     <module>sofa-portal</module>
+    <module>sofa-registry-test</module>
   </modules>
   <name>sofastack-samples</name>
 

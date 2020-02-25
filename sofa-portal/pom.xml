@@ -35,6 +35,12 @@
             <artifactId>runtime-sofa-boot-starter</artifactId>
         </dependency>
 
+        <!--sofa-tracer-->
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>tracer-sofa-boot-starter</artifactId>
+        </dependency>
+
         <!--注册中心-->
         <dependency>
             <groupId>com.alipay.sofa</groupId>

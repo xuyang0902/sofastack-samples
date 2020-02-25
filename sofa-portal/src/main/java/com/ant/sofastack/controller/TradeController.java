@@ -5,7 +5,8 @@ import com.alipay.sofa.runtime.api.annotation.SofaReferenceBinding;
 import com.ant.sofastack.facade.TradeFacade;
 import com.ant.sofastack.facade.model.TradeReq;
 import com.ant.sofastack.facade.model.TradeRes;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,6 +21,7 @@ import java.util.UUID;
 @RestController
 public class TradeController {
 
+    private static final Logger logger = LoggerFactory.getLogger(TradeController.class);
 
 
     //使用了SofaReference后不需要再用  @Autowired
@@ -30,6 +32,8 @@ public class TradeController {
 
     @GetMapping("/trade/buy")
     public TradeRes buy(HttpServletRequest request){
+
+        logger.info("--->>>req --> in");
 
         TradeReq tradeReq = new TradeReq();
         tradeReq.setToken(UUID.randomUUID().toString());

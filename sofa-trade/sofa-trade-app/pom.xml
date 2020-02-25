@@ -36,6 +36,14 @@
             <groupId>com.alipay.sofa</groupId>
             <artifactId>registry-client-all</artifactId>
         </dependency>
+
+
+        <!--sofa-tracer-->
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>tracer-sofa-boot-starter</artifactId>
+        </dependency>
+
     </dependencies>
 
 
